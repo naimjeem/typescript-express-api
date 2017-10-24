@@ -5,10 +5,10 @@ import * as compression from 'compression';
 import * as logger from 'morgan';
 import * as helmet from 'helmet';
 import * as cors from 'cors';
-// import Router
+// Router
+import PostRouter from './router/PostRouter';
 
-
-// Server Class
+// Server
 class Server {
   public app : express.Application;
 
@@ -37,7 +37,7 @@ class Server {
     router = express.Router();
 
     this.app.use('/', router);
-    // this.app.use('/api/v1/posts', PostRouter);
+    this.app.use('/api/v1/posts', PostRouter);
   }
 }
 

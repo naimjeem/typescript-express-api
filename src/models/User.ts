@@ -42,5 +42,4 @@ let UserSchema: Schema = new Schema({
   }]
 });
 
-
 export default model('User', UserSchema);
