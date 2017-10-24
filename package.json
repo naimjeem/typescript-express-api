@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "app",
   "license": "MIT",
+  "scripts": {
+    "server": "tsc && nodemon ./build/index.js",
+    "start": "node ./build/index.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
