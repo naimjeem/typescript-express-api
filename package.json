@@ -4,8 +4,9 @@
   "main": "app",
   "license": "MIT",
   "scripts": {
-    "server": "tsc && nodemon ./build/index.js",
-    "start": "node ./build/index.js"
+    "ts": "tsc -v",
+    "server": "nodemon ./build/app.js",
+    "start": "tsc && node ./build/app.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
